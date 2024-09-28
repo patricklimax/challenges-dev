@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  background-color: #fafaf9;
+  color: #18181b;
+
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 96px 25px 0;
+  gap: 72px;
+}
+
+.star-box {
+  padding: 0.7rem;
+  background-color: #f5c044;
+  border-radius: 100%;
+  width: fit-content;
+}
+
+.start-top-left {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.title-page {
+  margin-top: 24px;
+  font-size: 2.25rem;
+}
+
+.paragraph {
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+
+  margin-top: 30px;
+}
+
+.top-left ul {
+  list-style: none;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top-left ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bottom-rigth {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.card {
+  width: 357px;
+  height: 185px;
+
+  padding: 25px 40px;
+
+  background-color: #ffffff;
+
+  border-radius: 15px;
+}
+
+.card-1 {
+  align-self: end;
+}
+
+.name-stars {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-enterprise {
+  width: 120px;
+  height: auto;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+}
+
+.title-card {
+  font-size: 0.875rem;
+  margin: 20px 0;
+}
+
+.text-card {
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    padding: 96px 76px 0;
+  }
+  .top-left {
+    flex: 1;
+  }
+  .bottom-rigth {
+    flex: 1;
+  }
+}
