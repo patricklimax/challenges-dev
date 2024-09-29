@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../image/bg-image.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+  font-family: "Be Vietnam Pro", system-ui;
+  color: #fff;
+}
+
+.header {
+  padding: 24px;
+}
+
+main {
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  /* muda de página pra página */
+  padding: 0 24px;
+}
+
+.title-page {
+  /* margin-top: 50px; */
+
+  font-size: 4rem;
+  text-align: center;
+  line-height: 5rem;
+}
+
+.subtitle-page {
+  font-size: 1.8rem;
+  text-align: center;
+
+  margin-top: 32px;
+}
+
+.form {
+  max-width: 100%;
+  background-color: #ffffff55;
+  padding: 32px;
+
+  border-radius: 15px;
+  margin: 80px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.item-form input,
+.item-form select,
+textarea {
+  padding: 26px;
+  border-radius: 16px;
+  border: none;
+
+  background-color: #f8fafc;
+}
+
+select {
+  font-weight: 700;
+  font-family: "Be Vietnam Pro", system-ui;
+
+  appearance: none;
+
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  padding-right: 30px;
+  background-image: url("../image/Expand_down.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 20px;
+}
+
+.item-form input::placeholder {
+  font-weight: 700;
+  color: #cdd5e0;
+  font-family: "Be Vietnam Pro", system-ui;
+}
+
+.label {
+  font-size: 0.875rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  font-weight: 700;
+  /* color: #cdd5e0; */
+  font-family: "Be Vietnam Pro", system-ui;
+  height: 200px;
+}
+
+button {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #4036a9;
+  border: none;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 16px;
+  padding: 26px 0;
+  text-align: center;
+  margin-bottom: 110px;
+}
+
+@media (min-width: 641px) {
+  .item {
+    flex-direction: row;
+  }
+
+  .item-form {
+    flex: 1;
+  }
+}
+
+@media (min-width: 1025px) {
+  .form {
+    max-width: 810px;
+  }
+
+  .header {
+    padding: 24px 72px;
+  }
+}
