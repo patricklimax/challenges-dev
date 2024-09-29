@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../image/Background_image.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: #121826;
+  color: #e5e7eb;
+
+  font-family: "Outfit", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 48px 120px;
+}
+
+.title-page {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #9da3ae;
+}
+
+.text-1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 48px;
+
+  margin: 50px auto;
+
+  flex-wrap: wrap;
+}
+
+.card-item {
+  background-color: #212936;
+  width: 314px;
+
+  padding: 24px;
+  border-radius: 16px;
+
+  justify-self: center;
+  align-self: center;
+}
+
+.icon {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+  border-radius: 100%;
+}
+
+.icon-1 {
+  background-color: #fceed8;
+}
+
+.icon-2 {
+  background-color: #dee9fc;
+}
+
+.icon-3 {
+  background-color: #fbe5e6;
+}
+
+.title-card {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.text-2 {
+  margin-top: 24px;
+}
+
+.card-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+
+  margin-top: 20px;
+}
+
+@media (min-width: 640px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 678px;
+  }
+}
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1042px;
+  }
+}
